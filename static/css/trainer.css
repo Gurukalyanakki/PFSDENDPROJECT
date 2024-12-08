@@ -1,0 +1,121 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #FF6A00;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('path/to/your/background-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    text-align: left;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.stat {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.stat-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-progress {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.stat-graph {
+    font-size: 14px;
+}
+
+/* Styling for Background Image */
+.hero {
+    background-image: url('{% static "images/home.jpg" %}');
+    background-size: cover;
+    background-position:  center;
+}
+
+/* For better responsiveness */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stats {
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .stat {
+        margin-bottom: 15px;
+        width: 90%;
+    }
+}
