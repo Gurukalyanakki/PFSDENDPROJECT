@@ -1,0 +1,97 @@
+{% extends 'navbar/trainernavbar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Tools</title>
+    {% load static %}
+</head>
+<body style="font-family: Arial, sans-serif; background-color: black; color: white; margin: 0; padding: 0;">
+    {% block body %}
+    <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+        <!-- Topic 1 -->
+        <div style="display: flex; flex-wrap: wrap; background-color: #1a1a1a; border: 1px solid white; margin-bottom: 40px; padding: 20px; border-radius: 8px; overflow: hidden; gap: 15px;">
+            <img src="{% static 'images/it5.jpg' %}" alt="Database Management Overview" style="width: 150px; height: 150px; object-fit: cover; border-radius: 5px; border: 2px solid white;">
+            <div style="flex-grow: 1;">
+                <h2 style="text-transform: uppercase; color: white; margin-bottom: 20px;">Database Management Tools</h2>
+                <p>Database Management Tools (DBMS tools) are software applications designed to interact with, manage, and manipulate databases. They allow users to store, retrieve, modify, and analyze data efficiently while ensuring data integrity, security, and accessibility.</p>
+                <div>
+                    <h3 style="margin-top: 10px; margin-bottom: 10px;">Key Features of Database Management Tools</h3>
+                    <ul style="list-style-type: disc; margin-left: 20px; color: #cccccc;">
+                        <li><strong>Data Storage and Retrieval:</strong> Enable storage of large volumes of structured or unstructured data.</li>
+                        <li><strong>Data Manipulation:</strong> Support CRUD operations.</li>
+                        <li><strong>Data Security:</strong> Implement authentication, encryption, and access control.</li>
+                        <li><strong>Scalability:</strong> Handle increasing data sizes without performance degradation.</li>
+                        <li><strong>Backup and Recovery:</strong> Allow data backups and facilitate recovery in case of failures or corruption.</li>
+                        <li><strong>Performance Monitoring:</strong> Optimize database queries and monitor server performance.</li>
+                        <li><strong>Multi-User Access:</strong> Allow multiple users to access the database simultaneously with transaction control.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topic 2 -->
+        <div style="display: flex; flex-wrap: wrap; background-color: #1a1a1a; border: 1px solid white; margin-bottom: 40px; padding: 20px; border-radius: 8px; overflow: hidden; gap: 15px;">
+            <img src="{% static 'images/it4.jpg' %}" alt="Popular Tools Image" style="width: 150px; height: 150px; object-fit: cover; border-radius: 5px; border: 2px solid white;">
+            <div style="flex-grow: 1;">
+                <h3 style="margin-top: 10px; margin-bottom: 10px;">Popular Database Management Tools</h3>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 20px; color: white;">
+                    <thead>
+                        <tr style="background-color: #333;">
+                            <th style="border: 1px solid white; padding: 10px; text-align: left;">Tool</th>
+                            <th style="border: 1px solid white; padding: 10px; text-align: left;">Features</th>
+                            <th style="border: 1px solid white; padding: 10px; text-align: left;">Use Cases</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #2c2c2c;">
+                            <td style="border: 1px solid white; padding: 10px;">MySQL</td>
+                            <td style="border: 1px solid white; padding: 10px;">Scalability, ACID compliance, and integration with many programming languages</td>
+                            <td style="border: 1px solid white; padding: 10px;">Websites, online stores, and web applications</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid white; padding: 10px;">PostgreSQL</td>
+                            <td style="border: 1px solid white; padding: 10px;">Advanced data types, JSON support, and strong performance for complex queries</td>
+                            <td style="border: 1px solid white; padding: 10px;">Enterprise applications and analytics</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid white; padding: 10px;">Microsoft SQL Server</td>
+                            <td style="border: 1px solid white; padding: 10px;">Built-in analytics, integration with Microsoft ecosystem, and enterprise-grade security</td>
+                            <td style="border: 1px solid white; padding: 10px;">Business applications and reporting</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid white; padding: 10px;">MongoDB</td>
+                            <td style="border: 1px solid white; padding: 10px;">Schema-less design, horizontal scalability, and high performance for large data sets</td>
+                            <td style="border: 1px solid white; padding: 10px;">Big data applications, real-time analytics</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid white; padding: 10px;">SQLite</td>
+                            <td style="border: 1px solid white; padding: 10px;">No server installation required, suitable for embedded systems</td>
+                            <td style="border: 1px solid white; padding: 10px;">Mobile applications and lightweight desktop apps</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid white; padding: 10px;">Firebase Realtime Database</td>
+                            <td style="border: 1px solid white; padding: 10px;">Real-time data synchronization across devices</td>
+                            <td style="border: 1px solid white; padding: 10px;">Mobile and web apps needing real-time updates</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid white; padding: 10px;">Cassandra</td>
+                            <td style="border: 1px solid white; padding: 10px;">Decentralized architecture and high availability</td>
+                            <td style="border: 1px solid white; padding: 10px;">IoT applications and large-scale analytics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Call-to-Action Section -->
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{% url 'trainerapp:assignment' %}" style="color: white; text-decoration: none; border: 2px solid white; padding: 15px 30px; font-size: 18px; border-radius: 5px; transition: background-color 0.3s, color 0.3s;">
+               ASSIGNMENT
+            </a>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,124 @@
+{% extends 'Navbar/trainernavbar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to IT Tools</title>
+   
+</head>
+<body>
+    {% block body %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/it.css'%}">
+    <div class="container">
+      
+
+        <!-- Topic 1 -->
+        <div class="topic-card">
+            <img src="{% static 'images/it1.png'%}" alt="Overview Image" class="topic-image">
+            <div class="topic-content">
+                <h1>Introduction to IT Tools</h1>
+                <h2>Overview of IT in Modern Workplaces</h2>
+                <p>IT is essential in workplaces for enhancing productivity, streamlining processes, and facilitating collaboration.</p>
+                <h2>What is IT?</h2>
+                <p>Information Technology (IT) refers to the use of computers, software, and telecommunications to store, retrieve, transmit, and manipulate data. In today's digital world, IT tools and systems are crucial for automating tasks, storing large amounts of information, and facilitating communication across various platforms.</p>
+                <h3>Importance of IT in Modern Workplaces</h3>
+                <p>IT supports productivity, enhances collaboration, and enables organizations to make data-driven decisions. It also allows for remote work, provides access to cloud services, and ensures security of critical business data. IT tools such as project management software, collaboration platforms, and customer relationship management (CRM) systems have revolutionized the way businesses operate.</p>
+            </div>
+        </div>
+
+        <!-- Topic 2 -->
+        <div class="topic-card">
+            <img src="{% static 'images/it2.png'%}" alt="Types Image" class="topic-image">
+            <div class="topic-content">
+                <h1>Types of IT Tools</h1>
+                <ul>
+                    <li><strong>Office Tools:</strong> Manage documents, spreadsheets, and presentations.</li>
+                    <p>Office tools are essential for creating documents, managing data, and making presentations. Examples include:</p>
+                    <ul>
+                        <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                        <li>Google Workspace (Docs, Sheets, Slides)</li>
+                        <li>LibreOffice (Free alternative)</li>
+                    </ul>
+                    <li><strong>Collaboration Tools:</strong> Messaging, video calls, and file sharing.</li>
+                    <p>These tools facilitate communication and collaboration between teams:</p>
+                    <ul>
+                        <li>Slack (Messaging and collaboration)</li>
+                        <li>Microsoft Teams (Chat and video meetings)</li>
+                        <li>Zoom (Video conferencing)</li>
+                    </ul>
+                    <li><strong>Project Management Tools:</strong> Organize tasks, timelines, and resources.</li>
+                    <h2>Project Management Tools</h2>
+                    <p>Project management tools help teams organize and track tasks:</p>
+                    <ul>
+                        <li>Asana (Task and project tracking)</li>
+                        <li>Trello (Visual task management)</li>
+                        <li>Jira (For software development teams)</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Topic 3 -->
+        <div class="topic-card">
+            <img src="{% static 'images/it3.png'%}" alt="Office Tools Image" class="topic-image">
+            <div class="topic-content">
+                <h1>Office Productivity Tools</h1>
+               
+                    <h2>Microsoft Office Suite</h2>
+                <p>The Microsoft Office Suite is one of the most widely used office productivity tools. It includes the following applications:</p>
+                <ul>
+                    <li>Microsoft Word (Document creation and editing)</li>
+                    <li>Microsoft Excel (Data management and analysis)</li>
+                    <li>Microsoft PowerPoint (Presentation creation)</li>
+                </ul>
+                <h2>Google Workspace</h2>
+                <p>Google Workspace offers cloud-based tools for collaboration and productivity:</p>
+                <ul>
+                    <li>Google Docs (Document creation and editing)</li>
+                    <li>Google Sheets (Cloud-based spreadsheet management)</li>
+                    <li>Google Slides (Presentation tool)</li>
+                </ul>
+                <h2>LibreOffice</h2>
+                <p>LibreOffice is an open-source alternative to Microsoft Office, offering tools for:</p>
+                <ul>
+                    <li>Writer (Word processing)</li>
+                    <li>Calc (Spreadsheet management)</li>
+                    <li>Impress (Presentation creation)</li>
+                </ul>
+                <h2>Evernote</h2>
+                <p>Evernote is a tool for organizing notes, ideas, and to-do lists. It's perfect for managing personal and team notes:</p>
+                <ul>
+                    <li>Note-taking across devices</li>
+                    <li>Organizing ideas and information</li>
+                    <li>Sharing and collaborating with teams</li>
+                </ul>
+                 </ul>
+                <h2>Evernote</h2>
+                <p>Evernote is a tool for organizing notes, ideas, and to-do lists. It's perfect for managing personal and team notes:</p>
+                <ul>
+                    <li>Note-taking across devices</li>
+                    <li>Organizing ideas and information</li>
+                    <li>Sharing and collaborating with teams</li>
+                </ul>
+                <ul><div>
+                    <h1>Collaboration Tools</h1>
+        <p><strong>Purpose:</strong> Enhance teamwork and communication, especially in distributed and remote teams. Collaboration tools facilitate real-time interaction, sharing of files, and organized discussions to ensure smooth workflows and efficient task management.</p>
+        <ul>
+            <li><strong>Slack:</strong> A messaging platform for teams, featuring channels, file sharing, and integrations with other tools.</li>
+            <li><strong>Microsoft Teams:</strong> A collaboration suite offering chat, video meetings, file storage, and application integration.</li>
+            <li><strong>Zoom:</strong> A video conferencing tool widely used for meetings, webinars, and virtual events, with features like screen sharing and recording.</li>
+        </ul>
+                </div>
+            </ul>
+            </div>
+        </div>
+        <a href="{% url 'trainerapp:ittools2' %}" class="cta-btn" style="color: white; text-decoration: none; border: 2px solid white; padding: 10px 20px; font-size: 16px; border-radius: 5px;">NEXT</a>
+        
+    </div>
+    
+    {% endblock %}
+</body>
+</html>
+

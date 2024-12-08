@@ -1,0 +1,31 @@
+{% extends 'navbar/trainernavbar.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Training with Brandon Ross</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+<body style="background-color: black; color: rgb(10, 9, 9); text-align: center; margin: 0; padding: 0;">
+  
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/trainer.css' %}">
+    <section class="hero" style="background-image: url('{% static 'images/home.jpg' %}'); background-size: cover; background-position: center; height: 100vh;">
+        <div class="hero-content">
+            <div class="text-content">
+                <h1 style="color: white;">WELCOME,</h1>
+                <p style="color: white;">Training helps improve performance,build confidence,and maintain long-term results.</p>
+                <a href="{% url 'trainerapp:courses' %}" class="cta-btn" style="color: white; text-decoration: none; border: 2px solid white; padding: 10px 20px; font-size: 16px; border-radius: 5px;">LEARN OUR COURSES</a>
+            </div>
+        </div>
+    </section>
+
+       
+    </div>
+   
+</body>
+</html>
+{% endblock %}

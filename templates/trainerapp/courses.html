@@ -1,0 +1,66 @@
+{% extends 'navbar/trainernavbar.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURSES </title>
+    
+</head>
+<body>
+    {% block body %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/course.css' %}">
+    <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 30; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="{% static 'videos/black.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>( COURSES )</h1>
+      
+        <div class="courses">
+            <div class="course-card">
+                <img src="{% static 'images/course1.png' %}" alt="Adventure Sports">
+                <h2>IT AND TOOlS TRAINGING FOR SKILL ENHANCEMENT</h2>
+                <p>Tools that are used to Information technology</p>
+                
+                <a href="{% url 'trainerapp:ittools' %}" class="action-btn">View Course</a>
+
+            </div>
+            <div class="course-card">
+                <img src="{% static 'images/course2.png' %}" alt="Sales and Operations">
+                <h2>TECHNICAL SKILL DEVELOPMENT</h2>
+                <p>Enhance your skills in the technical domain</p>
+                
+                <a href=""class="action-btn">View Course</a>
+
+            </div>
+            <div class="course-card">
+                <img src="{% static 'images/course3.png' %}" alt="Marketing">
+                <h2>PROBLEMS AND CRITICAL THINKING</h2>
+                <p>Foundation course to understand about problems and to figureout solutions</p>
+              
+                <a href="" class="action-btn">View Course</a>
+
+            </div>
+            <div class="course-card">
+                <img src="{% static 'images/course4.png' %}" alt="Marketing">
+                <h2>LEADERSHIP DEVLOPMENT FOR MANAGING TASKS</h2>
+                <p>Skills that are neccessary to the leadership course</p>
+               
+                <a href="" class="action-btn">View Course</a>
+
+            </div>
+       
+        </div>
+        
+        
+    </div>
+    
+    
+</section>
+{% endblock %}
+</body>
+</html>
+
